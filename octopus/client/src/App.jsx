@@ -1,9 +1,14 @@
-import React from 'react';
+import React from "react";
+import Nav from "./components/Nav";
+import OneProduct from "./components/OneProduct";
 
 const App = () => {
-    return (
-       <h1>Hello World</h1>
-    )
+  return (
+    <>
+      <Nav />
+      <OneProduct />
+    </>
+  );
 };
 
 export default App;
