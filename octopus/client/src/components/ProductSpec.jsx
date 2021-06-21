@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
-const ProductSpec = (props) => {
-  const Text = styled.p`
-    color: #1d3b67;
-  `;
+const Text = styled.p`
+  color: #1d3b67;
+`;
 
+const ProductSpec = (props) => {
   return (
     <Text>
-      {props.power} // Packet of {props.quantity}
+      {props.power}
+      {" // Packet of "}
+      {props.quantity}
     </Text>
   );
 };
