@@ -39,7 +39,6 @@ const Nav = (props) => {
   const getNumberofItems = () => {
     for (var i = 0; i < props.cartItems.length; i++) {
       totalItems = totalItems + props.cartItems[i].quantity;
-      console.log(totalItems);
       return totalItems;
     }
   };
