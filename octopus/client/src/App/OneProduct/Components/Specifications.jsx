@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  /* width: 100%; */
+  width: 100%;
   padding: 10px 30px;
   color: white;
   background-color: #05102a;
@@ -26,25 +26,25 @@ const Specifications = (props) => {
         <tbody>
           <tr>
             <td>Brand</td>
-            <td>{props.data.brand}</td>
+            <td>{props.brand}</td>
           </tr>
           <tr>
             <td>Item weight</td>
-            <td>{props.data.weight}</td>
+            <td>{props.weight}</td>
           </tr>
           <tr>
             <td>Dimensions</td>
             <td>
-              {props.data.height}x{props.data.width}x{props.data.length}
+              {props.height}x{props.width}x{props.length}
             </td>
           </tr>
           <tr>
             <td>Item model number</td>
-            <td>{props.data.modelCode}</td>
+            <td>{props.modelCode}</td>
           </tr>
           <tr>
             <td>Colour</td>
-            <td>{props.data.colour}</td>
+            <td>{props.colour}</td>
           </tr>
         </tbody>
       </Table>

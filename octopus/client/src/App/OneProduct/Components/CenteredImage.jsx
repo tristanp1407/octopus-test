@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ProductCard from "../../ProductPage/ProductCard";
 
 const ImageWrapper = styled.div`
   position: relative;
@@ -19,7 +20,7 @@ const ProductImage = styled.img`
 const CenteredImage = (props) => {
   return (
     <ImageWrapper>
-      <ProductImage src={props.url} />
+      <ProductCard src={props.url} />
     </ImageWrapper>
   );
 };

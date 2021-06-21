@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = styled.button`
+const ButtonStyle = styled.button`
   height: 40px;
   width: 100%;
   max-width: 300px;
@@ -14,8 +14,10 @@ const Button = styled.button`
   border-radius: 2px; ;
 `;
 
-const AddToCartButton = (props) => {
-  return <Button onClick={props.handleAddToCart}>Add to Cart</Button>;
+const Button = (props) => {
+  return (
+    <ButtonStyle onClick={props.handleAddToCart}>{props.text}</ButtonStyle>
+  );
 };
 
-export default AddToCartButton;
+export default Button;

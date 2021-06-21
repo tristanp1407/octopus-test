@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
+  height: 10vh;
   padding: 15px;
   color: #8094b4;
   font-size: 10px;

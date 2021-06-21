@@ -5,6 +5,7 @@ import Basket from "../assets/basket.svg";
 
 const Wrapper = styled.div`
   display: flex;
+  height: 5vh;
   width: 100vw;
   flex-direction: row;
   align-items: center;

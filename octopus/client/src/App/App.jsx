@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import Footer from "./components/Footer";
-import Nav from "./components/Nav";
-import OneProduct from "./components/OneProduct";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from "./Footer";
+import Nav from "./Nav";
+import OneProduct from "./OneProduct/OneProduct";
+import HomePage from "./HomePage/HomePage";
+import ProductPage from "./ProductPage/ProductPage";
 
 const App = () => {
   //setting cart as array to push objects e.g. {id:1, quantity: 3}
@@ -24,11 +27,17 @@ const App = () => {
   };
 
   return (
-    <>
+    <Router>
       <Nav cartItems={cartItems} />
-      <OneProduct addToCart={addToCart} />
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/products" exact component={ProductPage} />
+        <Route path="/products/:id" component={OneProduct} />
+        <OneProduct addToCart={addToCart} />
+      </Switch>
+
       <Footer />
-    </>
+    </Router>
   );
 };
 
