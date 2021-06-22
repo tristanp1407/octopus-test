@@ -12,10 +12,6 @@ virtualenv env
 source env/bin/activate
 ```
 
-```bash
-pip install -r requirements.txt
-```
-
 Now we can install our dependencies:
 
 ```bash
@@ -42,7 +38,7 @@ Here is the [query to run to get you started](<http://127.0.0.1:8000/graphql#ope
 
 Go to octopus/client
 
-Run `bash npm i `
+Run `bash npm i`
 Serve the app `bash serve -s build`
 Install serve if needed `bash npm install -g serve `
 
