@@ -10,24 +10,24 @@ const AppView = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
+  overflow-y: scroll;
   justify-content: center;
   align-items: center;
   background-color: #05102a;
 `;
 
 const AppContainer = styled.div`
-  width: 100vw;
   max-width: 1000px;
+  flex-grow: 1;
 `;
 
 const App = () => {
-  //setting cart as array to push objects e.g. {id:1, quantity: 3}
   const [cartItems, updateCartItems] = useState([]);
 
   const addToCart = (itemsToAdd) => {
-    console.log(itemsToAdd.quantity + " items added to the cart");
     //check if item already in cart
     const exist = cartItems.find((x) => x.id === itemsToAdd.id);
+    // if items already in cart, add to the current quantity
     if (exist) {
       updateCartItems(
         cartItems.map((x) =>
@@ -36,6 +36,7 @@ const App = () => {
             : x
         )
       );
+      //if not in cart, add select quantity of product
     } else {
       updateCartItems([...cartItems, itemsToAdd]);
     }

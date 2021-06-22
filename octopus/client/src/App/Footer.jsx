@@ -5,7 +5,7 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 1000px;
   overflow: hidden;
-  height: 10vh;
+  height: 100px;
   color: #8094b4;
   background-color: #02193b;
   display: flex;

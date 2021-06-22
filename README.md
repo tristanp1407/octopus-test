@@ -64,7 +64,7 @@ Happy shopping!
 
 To run the tests, run
 
-` yarn test`
+` npm run test`
 
 then press `a` to run all tests
 
