@@ -42,9 +42,9 @@ Go to octopus/client
 
 Run ` npm i`
 
-Serve the app ` serve -s build`
-
 Install serve if needed ` npm install -g serve `
+
+Serve the app ` serve -s build`
 
 Happy shopping!
 
