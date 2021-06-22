@@ -44,17 +44,27 @@ Then follow this link to get started - [link](<http://127.0.0.1:8000/graphql#ope
 
 ### Now let's serve the app!
 
-Go to octopus/client
+Go to the client folder
 
-Run ` npm i`
+`cd ../../octopus/client`
 
-Install serve if needed `npm install -g serve`
+Run to install the packages
 
-Serve the app ` serve -s build`
+` npm i`
+
+Install serve if needed
+
+`npm install -g serve`
+
+Serve the app
+
+` serve -s build`
 
 Happy shopping!
 
-To run the tests, run ` yarn test`
+To run the tests, run
+
+` yarn test`
 
 ## The Journey
 
