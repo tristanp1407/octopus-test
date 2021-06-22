@@ -4,11 +4,13 @@ Just a quick note - I have really enjoyed doing this test! I learned so much in 
 
 # Instructions for setup
 
-You'll need to have Python3 installed - https://www.python.org/downloads/
+You'll need to have [Python3](https://www.python.org/downloads/) installed.
 
 ### First we need to go to the server folder, install our dependencies and spin up the backend
 
-Create a folder and clome this repo using the command `git clone git@github.com:tristanp1407/octopus-test.git`
+Create a folder and clome this repo using the command
+
+`git clone git@github.com:tristanp1407/octopus-test.git`
 
 Then go to the server folder `cd octopus-test/octopus/server`
 
