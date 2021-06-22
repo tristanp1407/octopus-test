@@ -4,7 +4,7 @@ import styled from "styled-components";
 const ImageWrapper = styled.div`
   position: relative;
   width: 100%;
-  height: ${props => props.height};
+  height: ${(props) => props.height};
   display: flex;
   flex-direction: column;
   align-items: center;

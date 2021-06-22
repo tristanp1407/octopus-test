@@ -13,11 +13,8 @@ const Wrapper = styled.div`
 `;
 
 const ProductPage = () => {
-
-
   const [isLoading, setIsLoading] = useState(true);
   const [product, setProduct] = useState(undefined);
-
 
   let queryBody = `
   query getProductById {
@@ -54,12 +51,11 @@ const ProductPage = () => {
 
   return (
     <>
-    {product && 
-      <Wrapper>
-            <ProductCard data={product} />
-      </Wrapper>
-    }
- 
+      {product && (
+        <Wrapper>
+          <ProductCard data={product} />
+        </Wrapper>
+      )}
     </>
   );
 };

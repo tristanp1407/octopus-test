@@ -13,13 +13,11 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   align-items: center;
 
-  
-  span{
-  font-size: 10px;;
-  line-height: 17px;
-  margin-left: 15px;;
+  span {
+    font-size: 10px;
+    line-height: 17px;
+    margin-left: 15px;
   }
-  
 `;
 
 const Footer = () => {

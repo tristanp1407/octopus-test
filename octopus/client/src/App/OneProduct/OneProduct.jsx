@@ -21,9 +21,8 @@ const ProductInfo = styled.div`
 `;
 
 const OneProduct = (props) => {
-
-//define query body with dynamic id
-let queryBody = `
+  //define query body with dynamic id
+  let queryBody = `
   query getProductById {
     product(productId: ${props.match.params.id}) {
     id

@@ -6,20 +6,19 @@ import Nav from "./Nav";
 import OneProduct from "./OneProduct/OneProduct";
 import ProductPage from "./ProductPage/ProductPage";
 
-
 const AppView = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
   justify-content: center;
   align-items: center;
-  background-color: #05102a ;
-`
+  background-color: #05102a;
+`;
 
 const AppContainer = styled.div`
   width: 100vw;
   max-width: 1000px;
-`
+`;
 
 const App = () => {
   //setting cart as array to push objects e.g. {id:1, quantity: 3}
@@ -46,16 +45,20 @@ const App = () => {
     <Router>
       <AppView>
         <Nav cartItems={cartItems} />
-        
+
         <AppContainer>
           <Switch>
             <Route path="/" exact component={ProductPage} />
-            <Route path="/products/:id" render={(props) => <OneProduct {...props} addToCart={addToCart} />} />
+            <Route
+              path="/products/:id"
+              render={(props) => (
+                <OneProduct {...props} addToCart={addToCart} />
+              )}
+            />
           </Switch>
         </AppContainer>
 
-        <Footer /> 
-      
+        <Footer />
       </AppView>
     </Router>
   );
