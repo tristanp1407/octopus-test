@@ -1,9 +1,12 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import styled from "styled-components";
 import Logo from "../assets/logo.svg";
 import Basket from "../assets/basket.svg";
 
 const Wrapper = styled.div`
+width: 100%;
+max-width: 1000px;;
   display: flex;
   height: 5vh;
   width: 100vw;
@@ -47,7 +50,8 @@ const Nav = (props) => {
 
   return (
     <Wrapper>
-      <LogoStyle src={Logo} />
+      <Link to="/"><LogoStyle src={Logo} /></Link>
+      
       <BasketWrapper>
         <BasketCount totalItems={totalItems}>{totalItems}</BasketCount>
         <LogoStyle src={Basket} />

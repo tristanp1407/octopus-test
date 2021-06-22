@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import PriceDisplay from "../../Components/PriceDisplay";
-import CenteredImage from "../OneProduct/Components/CenteredImage";
+import PriceDisplay from "../Components/PriceDisplay";
+import CenteredImage from "../Components/CenteredImage";
 import { Link } from "react-router-dom";
 
 const OneCard = styled.div`
@@ -57,14 +57,14 @@ const ProductCard = (props) => {
   return (
     <OneCard>
       <CardHero>
-        <CenteredImage url={props.imgUrl} />
+        <CenteredImage height={"250px"} url={props.data.imgUrl} />
         <ProductDetails>
-          <h3>{props.name}</h3>
-          <p>{props.brand}</p>
-          <PriceDisplay price={props.price} />
+          <h3>{props.data.name}</h3>
+          <p>{props.data.brand}</p>
+          <PriceDisplay price={props.data.price} />
         </ProductDetails>
-        <Link to={`/products/${props.id}`}>
-          <GoToButton>Shop</GoToButton>
+        <Link to={`/products/${props.data.id}`}>
+          <GoToButton>Go to product page</GoToButton>
         </Link>
       </CardHero>
     </OneCard>

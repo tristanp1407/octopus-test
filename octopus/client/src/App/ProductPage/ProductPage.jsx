@@ -13,6 +13,12 @@ const Wrapper = styled.div`
 `;
 
 const ProductPage = () => {
+
+
+  const [isLoading, setIsLoading] = useState(true);
+  const [product, setProduct] = useState(undefined);
+
+
   let queryBody = `
   query getProductById {
     product(productId: 1) {
@@ -23,9 +29,6 @@ const ProductPage = () => {
       imgUrl
     }
   }`;
-
-  const [isLoading, setIsLoading] = useState(true);
-  const [product, setProduct] = useState(undefined);
 
   useEffect(() => {
     fetch("http://127.0.0.1:8000/graphql", {
@@ -39,10 +42,9 @@ const ProductPage = () => {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
         setIsLoading(false);
         setProduct(res.data.product);
-        console.log(res.data.product);
+        // console.log(res.data.product);
       });
   }, []);
 
@@ -52,13 +54,12 @@ const ProductPage = () => {
 
   return (
     <>
+    {product && 
       <Wrapper>
-        {product && (
-          <>
             <ProductCard data={product} />
-          </>
-        )}
       </Wrapper>
+    }
+ 
     </>
   );
 };

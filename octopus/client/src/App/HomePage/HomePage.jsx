@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Logo from "../../assets/logo.png";
-import Button from "../../Components/Button";
+import Button from "../Components/Button";
 
 const HomePage = () => {
   const Wrapper = styled.div`

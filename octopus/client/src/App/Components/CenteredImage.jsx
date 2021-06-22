@@ -1,11 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import ProductCard from "../../ProductPage/ProductCard";
 
 const ImageWrapper = styled.div`
   position: relative;
   width: 100%;
-  height: 310px;
+  height: ${props => props.height};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,8 +18,8 @@ const ProductImage = styled.img`
 
 const CenteredImage = (props) => {
   return (
-    <ImageWrapper>
-      <ProductCard src={props.url} />
+    <ImageWrapper height={props.height}>
+      <ProductImage src={props.url} />
     </ImageWrapper>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
-import CenteredImage from "./Components/CenteredImage";
+import CenteredImage from "../Components/CenteredImage";
 import ProductTitle from "./Components/ProductTitle";
 import ProductSpec from "./Components/ProductSpec";
 import CartManager from "./Components/CartManager";
@@ -10,7 +10,7 @@ import Specifications from "./Components/Specifications";
 
 const ProductOverview = styled.div`
   background: linear-gradient(#05102a 60%, #02193b 60%);
-  width: 100vw;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -21,9 +21,11 @@ const ProductInfo = styled.div`
 `;
 
 const OneProduct = (props) => {
-  let queryBody = `
+
+//define query body with dynamic id
+let queryBody = `
   query getProductById {
-    product(productId: 1) {
+    product(productId: ${props.match.params.id}) {
     id
     name
     power
@@ -58,7 +60,7 @@ const OneProduct = (props) => {
       .then((res) => {
         setIsLoading(false);
         setProduct(res.data.product);
-        // console.log(res.data.product);
+        console.log(res.data.product);
       });
   }, []);
 
@@ -85,13 +87,12 @@ const OneProduct = (props) => {
   }
 
   //return once loaded
-
   return (
     <>
       {product && (
         <>
           <ProductOverview>
-            <CenteredImage url={product.imgUrl} />
+            <CenteredImage height={"310px"} url={product.imgUrl} />
             <ProductInfo>
               <ProductTitle data={product.name} />
               <ProductSpec power={product.power} quantity={product.quantity} />

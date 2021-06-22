@@ -31,7 +31,7 @@ const Button = styled.button`
   cursor: pointer;
   ${(props) =>
     (props.qty === 1) & (props.value === "-")
-      ? `background-color:#1d3b67 `
+      ? `background-color:#192B43 `
       : `background-color: #36598D`};
 `;
 

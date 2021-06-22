@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../../../Components/Button";
-import PriceDisplay from "../../../Components/PriceDisplay";
+import Button from "../../Components/Button";
+import PriceDisplay from "../../Components/PriceDisplay";
 import QuantitySelect from "./QuantitySelect";
 
 const Wrapper = styled.div`
@@ -27,7 +27,7 @@ const CartManager = (props) => {
         <PriceDisplay price={props.price} />
         <QuantitySelect changeQuantity={props.selectQuantity} qty={props.qty} />
       </PriceWrapper>
-      <Button text={"Add to cart"} onClick={props.handleAddToCart} />
+      <Button text={"Add to cart"} handleAddToCart={props.handleAddToCart} />
     </Wrapper>
   );
 };
