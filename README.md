@@ -63,14 +63,14 @@ I started by planning excalty what I wanted to achieve during the test:
 This code test has been my first code test for any industry role/work. I was nervous and very excited, but I have to say I honestly really enjoyed it and definitely learn quite a bit!
 
 #### Organising Files
-I set up the files as though this product was one of many, and the the app was ready to recevie more components. The fetch request is setup to use a different product id if one were to be added. 
+I set up the files as though this product was one of many, and the the app was ready to recieve more components. The fetch request is setup to use a different product id if one were to be added. 
 
 #### Querying the data
 This was my first experience working with GraphQL and I really enjoyed learning more about it! I'm really excited to start using it in my own personal projects. I started setting up apollo-boost, but ended up using a fetch request in the interest of time. But I already feel like I have learned tons online and am definietly onbaord with GraphQL now! 
 
 #### Testing
-I have wanted to learn more about testing for a while, and this was a great introduction. I took an extra hour to learn about it and am really glad I did so, as I feel like a more complete developper now. At first I ran into errors, as I also query the data on the landing page so needed the code to be asynchronous. 
-Unfortunately I ran into a second error, which I didn't have time to solve. The second time the `<App/>` component was rendered, it wouldn't take me back to the landing page, so couldn't find the right elements. I have seen similar issues online cause by react-router-dom , and am confident that I could resolve it with more time 🙂
+I have wanted to learn more about testing for a while, and this was a great introduction. I took an extra hour to learn about it and am really glad I did so, as I feel like a more complete developper now. At first I ran into errors, as I also query the data on the landing page so needed to make the code asynchronous. 
+Unfortunately I ran into a second error, which I couldn't resolve on time. The second time the `<App/>` component was rendered, it wouldn't take me back to the landing page, so couldn't find the right elements. I have seen similar issues online cause by react-router-dom , and am confident that I could resolve it with more time 🙂
 
 ---
 
