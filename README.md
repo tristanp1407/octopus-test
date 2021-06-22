@@ -41,8 +41,10 @@ Here is the [query to run to get you started](<http://127.0.0.1:8000/graphql#ope
 Go to octopus/client
 
 Run ` npm i`
-Serve the app `bash serve -s build`
-Install serve if needed `bash npm install -g serve `
+
+Serve the app ` serve -s build`
+
+Install serve if needed ` npm install -g serve `
 
 Happy shopping!
 
