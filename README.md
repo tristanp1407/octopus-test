@@ -3,6 +3,8 @@
 
 Just a quick note - I have really enjoyed doing this test! I learned so much in the process, mainly around GraphQL and testing, which are areas I was really keen to get more comfortable with. This was definitely good for my development. Thanks 😄
 
+# Instructions for setup
+
 ### First we need to go to the server folder, install our dependencies and spin up the backend
 
 Create a virtualenv in which we can install the dependencies
