@@ -91,8 +91,8 @@ This was my first experience working with GraphQL and I really enjoyed learning 
 
 #### Testing
 
-I have wanted to learn more about testing for a while, and this was a great introduction. I took an extra hour to learn about it and am really glad I did so, as I feel like a more complete developper now. At first I ran into errors, as I also query the data on the landing page so needed to make the code asynchronous.
-Unfortunately I ran into a second error, which I couldn't resolve on time. The second time the `<App/>` component was rendered, it wouldn't take me back to the landing page, so couldn't find the right elements. I have seen similar issues online cause by react-router-dom , and am confident that I could resolve it with more time 🙂
+I have wanted to learn more about testing for a while, and this was a great introduction. I took an extra hour to learn about it and am really glad I did so, as I feel like a more complete developper now. At first I ran into errors, as I also query the data on the landing page so needed to make the test code asynchronous.
+Unfortunately I ran into a second error, which I couldn't resolve on time. The second time the `<App/>` component was rendered, it wouldn't take me back to the landing page, so couldn't find the right elements. However if the first test was commented out, the second would pass just fine. I have seen similar issues online cause by react-router-dom , and am confident that I could resolve it with more time 🙂
 
 ---
 
