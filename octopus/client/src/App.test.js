@@ -1,8 +1,6 @@
 import React from "react";
 import { render, fireEvent, waitForElement} from "@testing-library/react";
 import App from "./App/App";
-import { MemoryRouter, Route } from "react-router-dom";
-
 
 
 test("should be able to increase and decrease product quantity", async () => {
@@ -29,12 +27,7 @@ test("should be able to increase and decrease product quantity", async () => {
 
 
 test("should be able to add items to the basket", async () => {
-  const { getByText, getByTitle } = render(
-  <MemoryRouter initialEntries={['/']}>
-    <App />
-    <Route path="/"/>
-  </MemoryRouter>
-  );
+  const { getByText, getByTitle } = render(<App/>);
 
   const productPageBtn = await waitForElement(()=> getByText("Go to product page")) 
   fireEvent.click(productPageBtn);
