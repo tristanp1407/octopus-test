@@ -9,20 +9,20 @@ Just a quick note - I have really enjoyed doing this test! I learned so much in 
 
 Create a virtualenv in which we can install the dependencies
 
-```bash
+```
 virtualenv env
 source env/bin/activate
 ```
 
 Now we can install our dependencies:
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
 To add some data to your database do the following:
 
-```bash
+```
 ./manage.py migrate
 # Load some example data
 ./manage.py loaddata products
@@ -30,7 +30,7 @@ To add some data to your database do the following:
 
 Now you should be ready to start the server:
 
-```bash
+```
 ./manage.py runserver 8000
 ```
 
@@ -40,13 +40,13 @@ Here is the [query to run to get you started](<http://127.0.0.1:8000/graphql#ope
 
 Go to octopus/client
 
-Run `bash npm i`
+Run ` npm i`
 Serve the app `bash serve -s build`
 Install serve if needed `bash npm install -g serve `
 
 Happy shopping!
 
-To run the tests, run `bash yarn test`
+To run the tests, run ` yarn test`
 
 ## The Journey
 
