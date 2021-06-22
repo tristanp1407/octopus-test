@@ -1,15 +1,18 @@
-````markdown
+
+# Octopus Code Test - Tristan Plet
+
 ## First we need to go to the server folder, install our dependencies and spin up the backend
 
-# Create a virtualenv in which we can install the dependencies
+## Create a virtualenv in which we can install the dependencies
 
+```bash
 virtualenv env
 source env/bin/activate
+```
 
 ```bash
 pip install -r requirements.txt
 ```
-````
 
 Now we can install our dependencies:
 
@@ -45,6 +48,5 @@ Happy shopping!
 
 To run the tests, run `bash yarn test`
 
-```
 
-```
+
