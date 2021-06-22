@@ -66,6 +66,8 @@ To run the tests, run
 
 ` yarn test`
 
+then press `a` to run all tests
+
 # The Journey
 
 I started by planning excalty what I wanted to achieve during the test:
