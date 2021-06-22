@@ -66,7 +66,7 @@ To run the tests, run
 
 ` yarn test`
 
-## The Journey
+# The Journey
 
 I started by planning excalty what I wanted to achieve during the test:
 
