@@ -1,18 +1,6 @@
 import React from "react";
 import { render, fireEvent, waitForElement } from "@testing-library/react";
 import App from "./App/App";
-import { act } from "react-dom/test-utils";
-
-
-global.fetch = jest.fn(()=>
-    Promise.resolv({{
-      json: () => 
-        Promise.resolve({
-          id: 1,
-          name: "test"
-        }),
-    })
-)
 
 
 test("should be able to increase and decrease product quantity", async () => {
