@@ -60,7 +60,7 @@ let queryBody = `
       .then((res) => {
         setIsLoading(false);
         setProduct(res.data.product);
-        console.log(res.data.product);
+        // console.log(res.data.product);
       });
   }, []);
 

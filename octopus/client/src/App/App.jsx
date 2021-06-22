@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./Footer";
 import Nav from "./Nav";
 import OneProduct from "./OneProduct/OneProduct";
-import HomePage from "./HomePage/HomePage";
 import ProductPage from "./ProductPage/ProductPage";
 
 
@@ -50,7 +49,6 @@ const App = () => {
         
         <AppContainer>
           <Switch>
-            {/* <Route path="/" exact component={HomePage} /> */}
             <Route path="/" exact component={ProductPage} />
             <Route path="/products/:id" render={(props) => <OneProduct {...props} addToCart={addToCart} />} />
           </Switch>

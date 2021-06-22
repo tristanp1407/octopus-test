@@ -53,7 +53,7 @@ const Nav = (props) => {
       <Link to="/"><LogoStyle src={Logo} /></Link>
       
       <BasketWrapper>
-        <BasketCount totalItems={totalItems}>{totalItems}</BasketCount>
+        <BasketCount title="Basket Items" totalItems={totalItems}>{totalItems}</BasketCount>
         <LogoStyle src={Basket} />
       </BasketWrapper>
     </Wrapper>

@@ -1,12 +1,15 @@
 import React from "react";
-import { render, fireEvent, waitForElement } from "@testing-library/react";
+import { render, fireEvent, waitForElement} from "@testing-library/react";
 import App from "./App/App";
+import { MemoryRouter, Route } from "react-router-dom";
+
 
 
 test("should be able to increase and decrease product quantity", async () => {
   const { getByText, getByTitle } = render(<App />);
 
-  fireEvent.click(getByText("Go to product page"));
+  const productPageBtn = await waitForElement(()=> getByText("Go to product page")) 
+  fireEvent.click(productPageBtn);
 
 
   const increaseQuantity = await waitForElement(() => getByText("+"));
@@ -21,11 +24,20 @@ test("should be able to increase and decrease product quantity", async () => {
 
   fireEvent.click(decreaseQuantity);
   expect(currentQuantity).toHaveTextContent("1");
+
 });
 
+
 test("should be able to add items to the basket", async () => {
-  const { getByText, getByTitle } = render(<App />);
-  fireEvent.click(getByText("Go to product page"));
+  const { getByText, getByTitle } = render(
+  <MemoryRouter initialEntries={['/']}>
+    <App />
+    <Route path="/"/>
+  </MemoryRouter>
+  );
+
+  const productPageBtn = await waitForElement(()=> getByText("Go to product page")) 
+  fireEvent.click(productPageBtn);
 
   const increaseQuantity = await waitForElement(() => getByText("+"));
 

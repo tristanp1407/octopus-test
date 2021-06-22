@@ -52,7 +52,7 @@ const QuantitySelect = (props) => {
         <Button qty={props.qty} value="-" onClick={onTrigger}>
           -
         </Button>
-        <Quantity>{props.qty}</Quantity>
+        <Quantity title="Current quantity">{props.qty}</Quantity>
         <Button value="+" onClick={onTrigger}>
           +
         </Button>
